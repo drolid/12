@@ -1,0 +1,2 @@
+SUBSYSTEM=="mpp_class", ENV{DEVNAME}=="/dev/mpp_service", GROUP="video"
+SUBSYSTEM=="video4linux", ENV{ID_PATH}=="platform-rkisp-vir*", GROUP="video"

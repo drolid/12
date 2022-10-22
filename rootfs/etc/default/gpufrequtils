@@ -1,0 +1,8 @@
+# GOVERNORS:    [userspace powersave performance simple_ondemand]
+# FREQUENCIES : [124999998 249999996 285714281 399999994
+#                499999992 666666656 799999987]
+# /sys/devices/platform/fde60000.gpu/devfreq/fde60000.gpu/available_governors
+
+GOVERNOR=performance
+MIN_FREQ=499999992
+MAX_FREQ=799999987

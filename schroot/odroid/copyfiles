@@ -1,0 +1,8 @@
+# Files to copy into the chroot from the host system.
+#
+# <source-and-destination>[ <destination>]
+/etc/resolv.conf
+#/root/.ssh/authorized_keys
+/root/.bashrc
+/root/.vimrc
+/root/.tmux.conf

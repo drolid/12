@@ -1,0 +1,2 @@
+# ARM Mali GPU device
+ACTION=="add", SUBSYSTEM=="devfreq", DEVPATH=="/devices/platform/fde60000.gpu/devfreq/fde60000.gpu", RUN+="/usr/bin/gpufreq-set '$env{DEVPATH}'"

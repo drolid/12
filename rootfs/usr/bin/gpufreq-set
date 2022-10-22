@@ -1,0 +1,21 @@
+#!/bin/sh
+
+DEVPATH=${1}
+
+[ -z ${DEVPATH} ] && exit 1
+
+. /etc/default/gpufrequtils
+
+if [ -f /sys/${DEVPATH}/governor ]; then
+	echo ${GOVERNOR} > /sys/${DEVPATH}/governor
+fi
+
+if [ -f /sys/${DEVPATH}/min_freq ]; then
+	echo ${MIN_FREQ} > /sys/${DEVPATH}/min_freq
+fi
+
+if [ -f /sys/${DEVPATH}/max_freq ]; then
+	echo ${MAX_FREQ} > /sys/${DEVPATH}/max_freq
+fi
+
+exit 0
